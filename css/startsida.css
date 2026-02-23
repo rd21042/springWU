@@ -1,0 +1,38 @@
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+    "h"
+    "n"
+    "f";
+    background-image: url("../img/sparvagn13.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 35rem;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    grid-area: h;
+}
+
+.title {
+    color:black
+}
+
+nav {
+    grid-area: n;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    grid-area: f;
+}
+
+.copyright {
+    color: white;
+}
