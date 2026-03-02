@@ -1,16 +1,15 @@
 body {
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr auto;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
-    "h"
-    "n"
-    "f";
-    background-image: url("../img/sparvagn13.jpg");
+        "h"
+        "n"
+        "f";
+    background-image: url("../img/sparvagn29_10.jpg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: 35rem;
+    background-size: 80rem 50rem;
 }
 
 header {
@@ -20,11 +19,12 @@ header {
 }
 
 .title {
-    color:black
+    color: black
 }
 
 nav {
     grid-area: n;
+    background-color: white;
 }
 
 footer {

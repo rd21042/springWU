@@ -1,16 +1,21 @@
 body {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: 
-    "h h"
-    "i i"
-    "a m"
-    "f f";
+    height: 100vh;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "h h h"
+        "a m i"
+        "f f f";
 }
 
 header {
     grid-area: h;
+}
+
+.title, .subtitle {
+    display: flex;
+    justify-content: center;
 }
 
 .image {
@@ -18,13 +23,33 @@ header {
 }
 
 aside {
+    max-width: 10rem;
+    border: solid black;
+    padding: 0 0.5rem 0 0.5rem;
+    margin: 0.5rem;
     grid-area: a;
+}
+
+.aside_title {
+    display: flex;
+    justify-content: center;
 }
 
 main {
     grid-area: m;
+    margin: 1rem;
 }
 
 footer {
     grid-area: f;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
 }
