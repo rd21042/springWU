@@ -13,7 +13,8 @@ header {
     grid-area: h;
 }
 
-.title, .subtitle {
+.title,
+.subtitle {
     display: flex;
     justify-content: center;
 }
@@ -25,7 +26,7 @@ header {
 aside {
     max-width: 10rem;
     border: solid black;
-    padding: 0 0.5rem 0 0.5rem;
+    padding: 0 0.5rem;
     margin: 0.5rem;
     grid-area: a;
 }
@@ -52,4 +53,23 @@ nav {
 section {
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas:
+            "h h"
+            "a i"
+            "m m"
+            "f f";
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
 }

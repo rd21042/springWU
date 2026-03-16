@@ -8,31 +8,37 @@ body {
         "f";
     background-image: url("../img/sparvagn29_10.jpg");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 80rem 50rem;
+    background-position: center;
+    background-size: cover;
 }
 
 header {
-    display: flex;
-    justify-content: center;
     grid-area: h;
+    text-align: center;
 }
 
 .title {
-    color: black
+    color: black;
 }
 
 nav {
     grid-area: n;
-    background-color: white;
+    background-color: rgba(255,255,255,0.9);
+    width: fit-content;
+    height: fit-content;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
 }
 
 footer {
+    grid-area: f;
     display: flex;
     justify-content: center;
-    grid-area: f;
 }
 
 .copyright {
-    color: white;
+    background-color: rgba(255,255,255,0.9);
 }
