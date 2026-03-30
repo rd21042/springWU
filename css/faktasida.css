@@ -21,6 +21,8 @@ header {
 
 .image {
     grid-area: i;
+    display: flex;
+    justify-content: center;
 }
 
 aside {
